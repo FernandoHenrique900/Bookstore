@@ -42,6 +42,7 @@
 
 .lista-menu__titulo { /* lista-menu__titulo é o título da lista de itens do menu */
     color: var(--laranja);
+    font-weight: 700; /* font-weight é o peso da fonte  */
 }
 
 .lista-menu__link { /* lista-menu__link é cada link da lista de itens do menu */
@@ -50,4 +51,8 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+}
+
+.container__botao { /* container__botao é o botão do menu hamburguer */
+    display: none;
 }
