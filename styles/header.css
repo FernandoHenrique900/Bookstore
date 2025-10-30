@@ -1,5 +1,53 @@
-.cabecalho__menu-hamburguer {
+.cabecalho__menu-hamburguer { /* cabecalho__menu-hamburguer é o menu hamburguer */
     width :24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block; /* para o menu hamburguer ficar na mesma linha do logo */
+}
+ 
+.cabecalho{ /* cabecalho é o container do cabeçalho */
+    background-color: var(--branco);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container { /* container é o container do logo e do menu hamburguer */
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem { /* container__imagem é o logo da página */
+    padding: 1em;
+}
+
+.lista-menu {  /* lista-menu é a lista de itens do menu */
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista-menu{ /* quando o botão for clicado, mostra a lista de itens do menu */   
+    display: block;
+}
+.lista-menu__titulo,
+.lista-menu__item { /* lista-menu__item é cada item da lista de itens do menu */
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo { /* lista-menu__titulo é o título da lista de itens do menu */
+    color: var(--laranja);
+}
+
+.lista-menu__link { /* lista-menu__link é cada link da lista de itens do menu */
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
