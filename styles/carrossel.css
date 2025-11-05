@@ -1,0 +1,8 @@
+.carrossel__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0 0.5em 0;
+}
