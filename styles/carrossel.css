@@ -4,5 +4,18 @@
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
-    padding: 1em 0 0.5em 0;
+    padding: 1em 0 0.5em 0; /* 1em é o espaçamento vertical e 0.5em é o espaçamento horizontal */
+}
+
+.swiper-slide img {
+    width: 100%; /* 100% é a largura do slide */
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
 }
