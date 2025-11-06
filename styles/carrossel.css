@@ -1,5 +1,7 @@
 .carrossel__titulo{
     color: var(--laranja);
+    background-color: var(--branco);
+    padding: 0.5em 0;
     font-weight: 700;
     font-size: 18px;
     text-align: center;
@@ -7,15 +9,90 @@
     padding: 1em 0 0.5em 0; /* 1em é o espaçamento vertical e 0.5em é o espaçamento horizontal */
 }
 
-.swiper-slide img {
-    width: 100%; /* 100% é a largura do slide */
-}
-
-.swiper-button-next, .swiper-button-prev {
-    display: none;
+.swiper-slide img { /* largura da imagem é 100% do slide */
+    width: 100%; 
 }
 
 .swiper-pagination {
     position: initial;
     margin: .5em 0;
+}
+
+.swiper-pagination-bullet { /* bullet é o ponto que indica o slide atual */
+    background-color: var(--laranja) !important; 
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active { /* bullet ativo é o ponto que indica o slide atual */
+    background-color: var(--laranja) !important;
+    opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev { /* swiper-button-next e swiper-button-prev são os botões de next e prev do carrossel */
+    color: var(--azul) !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after { /* swiper-button-next::after e swiper-button-prev::after são os botões de next e prev do carrossel */
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.card__descricao { /* card__descricao é a descrição do card */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.card__botoes{ /* card__botoes é a lista de botões do card */
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{ /* botoes é a lista de botões do card */
+    display: flex;
+}
+
+.card{ /* card é o container do card */
+    background-color: var(--branco);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo{ /* descricao__titulo é o título da descrição do card */
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro{ /* descricao__titulo-livro é o título do livro da descrição do card */
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5em 0;
+}
+
+.descricao__texto{ /* descricao__texto é o texto da descrição do card */
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.botoes__item{ /* botoes__item é cada item da lista de botões */
+    margin: 0 0.5em;
+}
+
+.botoes__ancora{ /* botoes__ancora é o botão do card */
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+    padding: 1em 2.2em;
+    border-radius: 10px;
+    text-decoration: none;
 }
