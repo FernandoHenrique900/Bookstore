@@ -65,8 +65,6 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="img/Angular.svg" alt="Livro de Angular"></div>
-                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro de Acessibilidade"></div>
                 <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro de Apache Kafka"></div>
                 <div class="swiper-slide"><img src="img/Construct2.svg" alt="Livro de Construct 2"></div>
                 <div class="swiper-slide"><img src="img/Gestão.svg" alt="Livro de Gestão de Projetos"></div>
@@ -84,10 +82,11 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            </div>
 
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
-            </div>
+            
 
             <!-- Card de recomendação -->
 
@@ -117,6 +116,56 @@
 
     </section>
 
+    <section class="carrossel">
+
+        <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+        <!--container do carrossel-->    
+        <!-- Slider main container -->
+            <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Angular.svg" alt="Livro de Angular"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro de Acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro de Apache Kafka"></div>
+                <div class="swiper-slide"><img src="img/Construct2.svg" alt="Livro de Construct 2"></div>
+                <div class="swiper-slide"><img src="img/Gestão.svg" alt="Livro de Gestão de Projetos"></div>
+            </div>    
+                    <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+            
+        </div>
+        <!--Card do Autor-->
+
+        <div class="card">
+            <!--1º Coluna do Card-->
+            <div class="card__descricao">    
+                <img src="img/Perfil-escritora 1.svg" alt="Autora do Livro" class="descricao__imagem">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Autor(a) do Mês</h3>
+                        <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                        <p class="descricao__texto">Analista de Sistemas e escritora, Juliana é especialista en Front-End.</p>
+                    </div>
+            </div>
+    
+            <div class="card__botoes">
+                <a href="#" class="botoes__ancora">Saiba mais...</a> 
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+                    </ul>     
+                </div>
+                <!--2º Coluna do Card-->                
+            </div>
+
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> <!-- Link para o arquivo JS do Swiper -->
     
     <script>

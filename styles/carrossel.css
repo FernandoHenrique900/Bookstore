@@ -96,3 +96,6 @@
     border-radius: 10px;
     text-decoration: none;
 }
+.descricao__imagem{ /* descricao__imagem é a imagem da descrição do card */
+    margin: 0 .5em 0 0;
+}
