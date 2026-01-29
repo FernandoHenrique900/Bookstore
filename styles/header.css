@@ -26,6 +26,7 @@
 
 .lista-menu {  /* lista-menu é a lista de itens do menu */
     display: none;
+    text-decoration: none;
     position: absolute;
     top: 100%;
     width: 60vw;
@@ -51,6 +52,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .container__botao { /* container__botao é o botão do menu hamburguer */
