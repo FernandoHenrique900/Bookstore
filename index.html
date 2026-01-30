@@ -45,7 +45,7 @@
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes_botao">
             <label for ="opcoes-menu">
-            <li class="opcoes__item">Categoria</li>
+            <li class="opcoes__item">Categorias</li>
             </label>
 
             <ul class="lista-menu">
@@ -73,10 +73,17 @@
         <div class="container">
             <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" 
                 class="container__imagem container__imagem-transparente"></a>
-            <a href="#"><img src="img/Compras.svg" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuario.svg" class="container__imagem"></a>
+            <a href="#" class="container__link">   
+                <img src="img/Compras.svg" class="container__imagem">
+                <p class="container__texto">Minha Sacola</p>
+            </a>        
+            <a href="#" class="container__link">   
+                <img src="img/Usuario.svg" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>        
         </div>
     </header>
+    <!-- banner -->
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
@@ -88,6 +95,7 @@
         <h2 class="carrossel__titulo">Lançamentos</h2>
         <!--container do carrossel-->    
         <!-- Slider main container -->
+            <div class="carrossel__container">
             <div class="swiper">
 
             <!-- If we need pagination -->
@@ -144,6 +152,7 @@
                     <a href="#" class="botoes__ancora">Saiba mais...</a>
                 </div>
             </div>
+        </div>
 
     </section>
 
@@ -152,6 +161,7 @@
         <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
         <!--container do carrossel-->    
         <!-- Slider main container -->
+            <div class="carrossel__container">
             <div class="swiper">
 
             <!-- If we need pagination -->
@@ -195,6 +205,7 @@
                 </div>
                 <!--2º Coluna do Card-->                
             </div>
+        </div>
 
     </section>
 

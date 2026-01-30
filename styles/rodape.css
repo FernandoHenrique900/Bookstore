@@ -45,3 +45,14 @@
         color: var(--cinza-claro);
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .lista-rodape{ /* para o texto do rodapé não ficar tão próximo do ícone */
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 3.5em;
+    }
+
+    .rodape{
+        padding: 3em 0;
+    }
+}

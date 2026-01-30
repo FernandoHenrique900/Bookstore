@@ -67,15 +67,50 @@
     display: none;
 }
 
+.container__texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+
+     /* Estilos para o cabeçalho */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-options{
+        display: flex;
+        list-style: none;
+    }
+
+    /* Estilos para a seção de contato */
+
+    .contato{
+        display: flex;
+        align-items: center;
+    }
+
     .container__titulo, .container__titulo--negrito {
         font-family: var(--font-secundaria);
         font-size: 30px;
     }
 
+      /* Estilos para o footer */
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*-----*/
     .container__titulo{
         font-weight: 400;
         display: block;
+    
     }
 
     .container__titulo--negrito{
@@ -113,3 +148,23 @@
     }
 }
 
+@media screen and (min-width: 1728px) {
+   .container__link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+   }
+   
+   .cabecalho{
+    padding: 0 2em;
+   }
+
+   .opcoes{
+    margin-right: auto;
+   }
+
+   .container__texto{
+    display: block;
+   }
+}
