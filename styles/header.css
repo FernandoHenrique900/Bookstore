@@ -6,6 +6,13 @@
     background-position: center;
     display: inline-block; /* para o menu hamburguer ficar na mesma linha do logo */
 }
+
+.container__botao:checked ~ .container__rotulo>.cabecalho__menu-hamburguer{ /* quando o botão for clicado, mostra o menu hamburguer aberto */
+    background-image: url("../img/Aberto.svg");
+}
+.container__botao:checked ~ .container__rotulo{ /* quando o botão for clicado, mostra o menu hamburguer aberto cor azul */
+    background: var(--azul-degrade);
+}
  
 .cabecalho{ /* cabecalho é o container do cabeçalho */
     background-color: var(--branco);
@@ -139,14 +146,34 @@
         display: none;
     }
 
-    .opcoes_botao:checked~.lista-menu {
+    .opcoes__botao:checked~.lista-menu {
         display: block;
         width: auto; /* para o menu hamburguer ficar na mesma linha do logo */
     }
-    .opcoes_botao{
+    .opcoes__botao{
         display: none; /* para o botão do menu hamburguer não aparecer */
     }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo>.opcoes__item{ /*cor do item do menu quando está selecionado */
+        background: var(--azul-degrade);
+        color: var(--branco);
+
+    }
+
+    .opcoes__item{ /*cor do item do menu quando está selecionado */
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
 }
+
 
 @media screen and (min-width: 1728px) {
    .container__link{

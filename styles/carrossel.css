@@ -7,6 +7,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 1em 0 0.5em 0; /* 1em é o espaçamento vertical e 0.5em é o espaçamento horizontal */
+    margin-bottom: 1em;
 }
 
 .swiper-slide img { /* largura da imagem é 100% do slide */
@@ -123,6 +124,9 @@
         width: 50%;
         margin: 2em auto;
     }
+    .botoes__ancora:active{
+        background-color: var(--azul); /* cor do botão quando está ativo */
+    } 
 }
 
 @media screen and (min-width: 1728px) {
